@@ -8,7 +8,6 @@
     "build:sass": "sass  --no-source-map src/sass:public/css",
     "copy:html": "copyfiles -u 1 ./src/*.html public",
     "copy:js": "copyfiles -u 1 ./src/*.js public",
-    "copy:components": "copyfiles -u 1 ./src/components/*.js public",
     "copy:img": "copyfiles -u 1 ./src/img/* public",
     "copy": "npm-run-all --parallel copy:*",
     "watch:html": "onchange 'src/*.html' -- npm run copy:html",
@@ -18,7 +17,7 @@
     "watch": "npm-run-all --parallel watch:*",
     "serve": "browser-sync start --server public --files public",
     "start": "npm-run-all copy --parallel watch serve",
-    "build": "npm-run-all copy:html build:*",
+    "build": "npm-run-all copy:* build:*",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
   },
   "dependencies": {
