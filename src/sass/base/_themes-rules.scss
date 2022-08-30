@@ -1,0 +1,105 @@
+@use "../abstracts/_abstracts-dir" as *;
+@use "../themes/_themes-dir" as *;
+@use "../vendors/_vendors-dir" as *;
+
+@include themify($themes) {
+  background-color: themed("black");
+
+  .container p {
+    color: themed("gallery");
+  }
+
+  .theme-btn {
+    color: themed("pictonBlue");
+    background-color: themed("towerGray");
+    &:hover {
+      background: themed("black");
+    }
+  }
+
+  .right h1 {
+    color: themed("towerGray");
+    span {
+      color: themed("ecstasy");
+    }
+  }
+
+  .right h3 {
+    color: themed("gallery");
+  }
+
+  .clip {
+    background-color: themed("pictonBlue");
+  }
+
+  nav {
+    background: themed("pictonBlue");
+    @include media(">tablet") {
+      background: themed("rockBlue");
+    }
+    a {
+      color: themed("ecstasy");
+      &:hover {
+        color: themed("gallery");
+      }
+    }
+  }
+
+  .nav-toggle:focus ~ .nav-toggle-label {
+    background-color: themed("gallery");
+  }
+
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    background: themed("towerGray");
+  }
+
+  .download {
+    border: 2px solid themed("ecstasy");
+    a {
+      color: themed("gallery");
+    }
+    &:hover {
+      background-color: themed("ecstasy");
+    }
+    i {
+      padding: 0.5em;
+      color: themed("towerGray");
+    }
+  }
+
+  #contact-info {
+    color: themed("pictonBlue");
+  }
+
+  #contact-info a {
+    color: themed("gallery");
+    text-decoration: none;
+  }
+
+  .linkedin a:hover {
+    color: themed("ecstasy");
+  }
+
+  .linkedin a:visited {
+    color: themed("rockBlue");
+  }
+
+  .hovers {
+    background: themed("ecstasy");
+  }
+
+  .icon:hover {
+    background-color: themed("gallery");
+    i {
+      color: themed("black");
+    }
+  }
+
+  .techies {
+    i {
+      color: themed('pictonBlue');
+    }
+  }
+}

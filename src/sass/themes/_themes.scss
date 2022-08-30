@@ -1,0 +1,18 @@
+$themes: (
+'dark':(
+  'black': #000000,
+  'pictonBlue': #3AB4F2,
+  'rockBlue': #9CB4CC,
+  'towerGray': #A2B5BB,
+  'ecstasy': #F66B0E,
+  'gallery': #EFEFEF,
+  ),
+'light':(  
+  'black': lighten(#000000, 90%),
+  'pictonBlue': darken(#3AB4F2, 40%),
+  'rockBlue': darken(#9CB4CC, 10%),
+  'towerGray': darken(#A2B5BB, 40%),
+  'ecstasy': darken(#F66B0E, 10%),
+  'gallery': darken(#EFEFEF, 50%),
+),
+)

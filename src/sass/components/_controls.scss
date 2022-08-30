@@ -1,0 +1,144 @@
+@use "../abstracts/__abstracts-dir" as *;
+@use "../vendors/_vendors-dir" as *;
+
+.controls {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  display: grid;
+  padding: 1em;
+}
+
+.nav-toggle {
+  position: fixed !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 60%;
+  right: 6%;
+  padding: 0 0.5em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  height: 3px;
+  width: 1.5em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: center;
+  top: 100%;
+  right: 6%;
+  width: fit-content;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+  border-radius: 15px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 0.7em 1em;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav li p {
+  text-align: center;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span {
+  background-color: transparent;
+}
+
+
+@include media('>tablet') {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav {
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1, 1);
+    top: initial;
+    left: initial;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin: 0.3em 1.5em;
+    text-align: center;
+  }
+}

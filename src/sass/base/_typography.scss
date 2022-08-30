@@ -1,0 +1,134 @@
+@use "../abstracts/__abstracts-dir" as *;
+@use "../themes/_themes-dir" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Indie+Flower&display=swap');
+
+$fontIndie: "Indie Flower", cursive;
+$fontComf: 'Comfortaa', cursive;;
+
+.control {
+  font-family: $fontIndie;
+  p {
+    font-size: 14px;
+  }
+}
+
+.container {
+  p {
+    font-family: $fontComf;
+    font-size: 1.2em;
+    line-height: 1.15;
+    text-align: justify;
+    text-justify: auto;
+  }
+}
+
+.right {
+  h1 {
+    font-family: $fontIndie;
+    font-size: 4.5em;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: $fontIndie;
+    font-size: 2.5em;
+    text-align: center;
+  }
+}
+
+.download {
+  a {
+    font-family: $fontIndie;
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+  i {
+    font-size: 1.3em;
+  }
+}
+
+.sub-title {
+  h2 {
+    font-family: $fontIndie;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.bg-text {
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+.project-card {
+  font-family: $fontComf;
+}
+
+.hovers > h3 {
+  font-size: 1.5em;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.hovers i {
+  font-size: 1.5rem;
+}
+
+.techies {
+  i {
+    font-size: 2em;
+  }
+  p {
+    font-family: $fontIndie;
+    font-size: 0.9em;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
+@include themify($themes) {
+  .sub-title {
+    h2 {
+      color: themed("towerGray");
+      span {
+        color: themed("ecstasy");
+      }
+    }
+    .bg-text {
+      color: themed("rockBlue");
+      opacity: 0.15;
+    }
+  }
+
+  .hovers > h3 {
+    color: themed("towerGray");
+  }
+
+  .hovers i {
+    color: themed("gallery");
+  }
+  .project-card > h3 {
+    color: themed("gallery");
+  }
+
+  .loc p ~ p {
+    color: themed("rockBlue");
+  }
+
+  .email p ~ p {
+    color: themed("rockBlue");
+  }
+
+  .mob p ~ p {
+    color: themed("rockBlue");
+  }
+  .linkedin p ~ p {
+    color: themed("rockBlue");
+  }
+  .project-card h5 {
+color: themed('gallery')
+  }
+}
