@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='/css/styles.css'>
+  <link rel='icon' type="text/css" href='./img/favicon_mk.png'>
+  <!-- Font Awesome -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css'
+    integrity='sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=='
+    crossorigin='anonymous' referrerpolicy='no-referrer' />
+  <!-- Script -->
+  <script src='./app.js' type='text/javascript' defer></script>
+  <title>Document</title>
+</head>
+
+<body class='dark-theme'>
+
+  <header>
+    <div class='theme-btn'>
+      <i class='fas fa-adjust'></i>
+    </div>
+    <div class="controls">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul>
+          <li class="control" data-id="home">
+            <a href="#home">
+              <i class="fa-solid fa-house-user"></i>
+              <p>HOME</p>
+            </a>
+          </li>
+          <li class="control">
+            <a href="#about">
+              <i class="fas fa-user"></i>
+              <p>ABOUT</p>
+            </a>
+          </li>
+          <li class="control">
+            <a href="#projects">
+              <i class="fas fa-briefcase"></i>
+              <p>projects</p>
+            </a>
+          </li>
+          <li class="control">
+            <a href="#contact">
+              <i class="fa-solid fa-envelope-circle-check"></i>
+              <p>CONTACT</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </div>
+  </header>
+  <section class='container' id='home'>
+    <div class='clip'></div>
+    <div class='left'>
+      <div class='image'>
+        <img src='./img/carbon.png' alt='image showing a code chunk'>
+      </div>
+    </div>
+
+    <div class='right'>
+      <h1>
+        Hello, I'm
+        <span class='name'>Marios</span>
+      </h1>
+      <h3>Welcome to my portfolio.</h3>
+      <p>I'm a junior web developer with a background in Geography. In other words, I studied how the physical
+        environment interacts with the human culture, but it turns out I have a passion for coding. Probably because
+        I
+        love the -hard to understand- regular expressions.
+        <span>
+          😮 Oops
+        </span>
+      </p>
+    </div>
+  </section>
+  <section class='container' id="about">
+    <div class='clip'></div>
+    <div class="sub-title full-width">
+      <h2>About <span>me</span>
+        <span class='bg-text'>about <br> me</span>
+      </h2>
+    </div>
+    <article class='info'>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Eveniet labore nihil obcaecati consequatur. Debitis error doloremque,
+        vero eos vel nemo eius voluptatem dicta tenetur modi. <br /> <br /> La musica
+        delectus dolore fugiat exercitationem a,
+        ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Harum non necessitatibus deleniti eum soluta.
+      </p>
+      <div class='download'>
+        <a href="">
+          <span class="btn-text">Download CV</span>
+        </a>
+        <i class="fas fa-download"></i>
+      </div>
+    </article>
+    <article class="techies">
+      <div class="html">
+        <i class="fa-brands fa-html5"></i>
+        <p>HTML</p>
+      </div>
+      <div class="css">
+        <i class="fa-brands fa-css3"></i>
+        <p>CSS3</p>
+      </div>
+      <div class="sass">
+        <i class="fa-brands fa-sass"></i>
+        <p>SASS</p>
+      </div>
+      <div class="bootstrap">
+        <i class="fa-brands fa-bootstrap"></i>
+        <p>BOOTSTRAP</p>
+      </div>
+      <div class="js">
+        <i class="fa-brands fa-square-js"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="python">
+        <i class="fa-brands fa-python"></i>
+        <p>Python</p>
+      </div>
+      <div class="react">
+        <i class="fa-brands fa-react"></i>
+        <p>React</p>
+      </div>
+      <div class="node">
+        <i class="fa-brands fa-node"></i>
+        <p>NodeJS</p>
+      </div>
+      <div class="git">
+        <i class="fa-brands fa-git-alt"></i>
+        <p>Git</p>
+      </div>
+    </article>
+  </section>
+  <section class="container" id="projects">
+    <div class='clip'></div>
+    <div class="sub-title full-width">
+      <h2>My <span>projects</span>
+        <span class="bg-text">My <br> Work</span>
+      </h2>
+    </div>
+    <article>
+      <p class="port-text full-width">
+        Here is some of my work that I've done in various programming languages.
+      </p>
+      <div class="projects">
+        <div class="project-card">
+          <img src="./img/img/port1.jpg" alt="">
+          <h5>project name</h5>
+          <div class="hovers">
+            <h3>Project Source</h3>
+            <div class="icons">
+              <a href="#" target="_blank" class="icon">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./img/img/port2.jpg" alt="">
+          <h5>project name</h5>
+          <div class="hovers">
+            <h3>Project Source</h3>
+            <div class="icons">
+              <a href="#" class="icon">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./img/img/port3.jpg" alt="">
+          <div class="hovers">
+            <h3>Project Source</h3>
+            <div class="icons">
+              <a href="#" target="_blank" class="icon">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./img/img/port4.jpg" alt="">
+          <div class="hovers">
+            <h3>Project Source</h3>
+            <div class="icons">
+              <a href="#" target="_blank" class="icon">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./img/img/port5.jpg" alt="">
+          <div class="hovers">
+            <h3>Project Source</h3>
+            <div class="icons">
+              <a href="#" target="_blank" class="icon">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./img/img/port7.jpg" alt="">
+          <h3>last</h3>
+          <div class="hovers">
+            <h3>Project Source</h3>
+            <div class="icons">
+              <a href="#" target="_blank" class="icon">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class="container" id="contact">
+    <div class='clip'></div>
+    <div class="sub-title full-width">
+      <h2>Contact
+        <span>Me</span>
+        <span class="bg-text">Contact <br>Me</span>
+      </h2>
+    </div>
+    <article class="contact-info">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        In, laborum numquam? Quam excepturi perspiciatis quas quasi.
+      </p>
+      <div class="loc">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Location</p>
+        <p>: Harrogate, N. Yorkshire</p>
+      </div>
+      <div class="email">
+        <i class="fas fa-envelope"></i>
+        <p>Email</p>
+        <p>: marioskontis@outlook.com</p>
+      </div>
+      <div class="mob">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <p>Mobile Number</p>
+        <p>: 07943283805</p>
+      </div>
+      <div class="linkedin">
+        <i class="fa-brands fa-linkedin"></i>
+        <p>LinkedIn</p>
+        <a href="https://tinyurl.com/2z2nhx7u">: tinyurl.com/2z2nhx7u</a>
+      </div>
+      <div class='download'>
+        <a href="">
+          <span class="btn-text">Download CV</span>
+        </a>
+        <i class="fas fa-download"></i>
+      </div>
+    </article>
+  </section>
+</body>
+
+</html>
