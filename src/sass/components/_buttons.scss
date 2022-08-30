@@ -1,0 +1,39 @@
+@use "../abstracts/__abstracts-dir" as *;
+@use "../vendors/_vendors-dir" as *;
+
+.theme-btn {
+  top: 2%;
+  left: 6%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+  z-index: 15;
+
+  @include media(">tablet")  {
+    padding: 0;
+  }
+
+  i {
+    font-size: 0.9em;
+    pointer-events: none;
+  }
+}
+
+.download {
+  max-width: fit-content;
+  padding: 0.8em;
+  margin: 2.5em auto;
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 50px;
+  position: relative;
+  &:hover {
+    padding: 0.4em;
+  }
+}

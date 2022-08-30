@@ -1,0 +1,56 @@
+@use "../abstracts/__abstracts-dir" as *;
+@use "../vendors/_vendors-dir" as *;
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+.image > img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(70%);
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.image {
+  margin: 4rem 0;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+
+  p {
+    margin: 1.5em 0 5em;
+  }
+  .oops {
+    position: absolute;
+    padding-top: 0.4em;
+  }
+}
+
+@include media(">tablet") {
+  .right {
+    h1,
+    h3,
+    p {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    p {
+      padding: 1em;
+    }
+  }
+}

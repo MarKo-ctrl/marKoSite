@@ -1,0 +1,36 @@
+@use "../vendors/_vendors-dir" as *;
+
+.info {
+  text-align: center;
+  width: 99vw;
+  margin: 3em auto 0;
+  p {
+    padding: 2.3rem 0.5em 0.8em;
+    margin: 0 auto 2em;
+    max-width: 600px;
+  }
+}
+
+@include media(">tablet") {
+  #about {
+    flex-wrap: wrap;
+  }
+}
+
+.techies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 99vw;
+  margin: 0 auto 5em;
+  div {
+    text-align: center;
+    margin: 0.6em;
+    padding: 0.2em;
+
+  }
+  p {
+    margin: 0;
+    padding: 0.4em 0 0 0;
+  }
+}
