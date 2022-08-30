@@ -1,0 +1,5 @@
+src/img/img/*
+node_modules/*
+node_modules
+public
+*-lock.json
